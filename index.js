@@ -9,4 +9,4 @@ for(let i = 0; i < 120; i++) {
 let randomJson = JSON.stringify(randomData);
 let nameJson = 'random_' + Date.now();
 
-fs.writeFileSync(`${__dirname}/${nameJson}.json`, randomJson);
+fs.writeFileSync(`./${nameJson}.json`, randomJson);

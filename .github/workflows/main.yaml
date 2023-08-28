@@ -21,10 +21,3 @@ jobs:
 
       - name: segundo-paso
         run: node index.js
-
-      - name: tercer-paso
-        run: |
-        git status
-        git add .
-        git commit -m "nueva subida con json"
-        git push
