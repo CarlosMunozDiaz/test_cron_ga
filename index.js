@@ -1,4 +1,4 @@
-//var fs = require('fs');
+var fs = require('fs');
 
 let randomData = [];
 
@@ -11,4 +11,4 @@ let nameJson = 'random_' + Date.now();
 
 console.log(nameJson, randomJson);
 
-//fs.writeFile(`./data/${nameJson}.json`, randomJson);
+fs.writeFile(`./data/${nameJson}.json`, randomJson);
