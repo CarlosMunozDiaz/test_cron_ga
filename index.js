@@ -13,11 +13,11 @@ let nameJson = 'random_' + Date.now();
 fs.writeFile("./data.json", randomJson, (err) => err && console.error(err));
 
 fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
-if (err) throw err;
-console.log('Saved!');
+    if (err) throw err;
+    console.log('Saved!');
 });
 
 fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
     if (err) throw err;
     console.log('Saved!');
-  });
+});
