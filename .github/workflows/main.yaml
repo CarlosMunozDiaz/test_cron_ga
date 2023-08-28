@@ -3,7 +3,6 @@ name: test_cron_ga
 on:
   schedule:
     - cron: '*/30 * * * *'
-  workflow_dispatch:
 
 jobs:
   this-job:
