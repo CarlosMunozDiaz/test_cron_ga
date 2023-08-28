@@ -3,3 +3,13 @@ name: test_cron_ga
 on:
   schedule:
     -cron: */30 * * * *
+
+jobs:
+  this-job:
+    runs-on: ubuntu-latest
+    steps:
+      -name: primer-paso
+      -run: node index.js
+
+      -name: segundo-paso
+      -run: echo "Estamos realizando el segundo paso. Eso quiere decir que el .json se ha creado"
