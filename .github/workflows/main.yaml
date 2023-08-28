@@ -1,0 +1,5 @@
+name: test_cron_ga
+
+on:
+  schedule:
+    -cron: */30 * * * *
