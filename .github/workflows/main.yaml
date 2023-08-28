@@ -2,7 +2,7 @@ name: test_cron_ga
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   this-job:
