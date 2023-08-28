@@ -10,5 +10,6 @@ let randomJson = JSON.stringify(randomData);
 let nameJson = 'random_' + Date.now();
 
 console.log(nameJson, randomJson);
+console.log(__dirname);
 
-fs.writeFileSync(`./data/${nameJson}.json`, randomJson);
+fs.writeFileSync(`${__dirname}/data/${nameJson}.json`, randomJson);
