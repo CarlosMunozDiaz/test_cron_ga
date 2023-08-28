@@ -3,13 +3,15 @@ name: test_cron_ga
 on:
   schedule:
     - cron: '*/30 * * * *'
+  workflow-dispatch:
 
 jobs:
   this-job:
     runs-on: macOS-latest
+
     steps:
       - name: primer-paso
-      - run: node index.js
+        run: node index.js
 
       - name: segundo-paso
-      - run: echo "Estamos realizando el segundo paso. Eso quiere decir que el .json se ha creado"
+        run: echo "Estamos realizando el segundo paso. Eso quiere decir que el .json se ha creado"
