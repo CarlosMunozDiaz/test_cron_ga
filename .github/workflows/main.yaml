@@ -15,10 +15,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run : npm ci
+      - run : npm install
 
       - name: primer-paso
-        run: node index.js
+        run: echo "Estamos realizando primer paso"
 
       - name: segundo-paso
-        run: echo "Estamos realizando el segundo paso. Eso quiere decir que el .json se ha creado"
+        run: node index.js
